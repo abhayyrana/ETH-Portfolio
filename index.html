@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhay Rana - Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -369,7 +369,7 @@
             border-radius: 9999px;
             font-size: 1.125rem;
             font-weight: 500;
-            transition: all 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
 
         body.light .skill-badge {
@@ -499,17 +499,36 @@
             <p class="subtitle">B.Tech in Robotics & Artificial Intelligence</p>
             <p class="description">K.J. Somaiya College of Engineering, Mumbai</p>
             
-            <div class="social-links">
-                <a href="https://github.com/abhayyrana" target="_blank" class="social-btn">
-                    <i data-lucide="github" width="24" height="24"></i>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem;">
+                <a href="https://github.com/abhayyrana" target="_blank" 
+                    class="social-btn" 
+                    style="display: flex; align-items: center; justify-content: center; 
+                            width: 50px; height: 50px; border-radius: 70%; 
+                            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); 
+                            transition: all 0.3s ease; color: #a855f7; font-size: 30px;">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/abhayyrana/" target="_blank" class="social-btn">
-                    <i data-lucide="linkedin" width="24" height="24"></i>
+
+                <a href="https://www.linkedin.com/in/abhayyrana/" target="_blank" 
+                    class="social-btn" 
+                    style="display: flex; align-items: center; justify-content: center; 
+                            width: 50px; height: 50px; border-radius: 70%; 
+                            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); 
+                            transition: all 0.3s ease; color: #a855f7; font-size: 30px;">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="mailto:abhay.rana@example.com" class="social-btn">
-                    <i data-lucide="mail" width="24" height="24"></i>
+
+                <a href="mailto:abhay.rana@example.com" 
+                    class="social-btn" 
+                    style="display: flex; align-items: center; justify-content: center; 
+                            width: 50px; height: 50px; border-radius: 70%; 
+                            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); 
+                            transition: all 0.3s ease; color: #a855f7; font-size: 30px;">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
+
+
             
             <div class="scroll-down">
                 <i data-lucide="chevron-down" width="32" height="32" style="color: #a855f7;"></i>
@@ -539,7 +558,6 @@
 
     <!-- Skills Section -->
     <section id="skills">
-        <div class="gradient-orb orb-3"></div>
         <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
         <p class="section-desc">Technologies, tools, and frameworks I use to build projects and explore new ideas in robotics and AI.</p>
         
