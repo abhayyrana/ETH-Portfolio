@@ -216,8 +216,14 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-bottom: 0.2rem;
+}
+
+.mini {
+  font-size: 1.125rem;
   margin-bottom: 1rem;
 }
+
 
 body.light .subtitle {
   background: linear-gradient(to right, #9333ea, #db2777);
@@ -227,8 +233,14 @@ body.light .subtitle {
 
 .description {
   color: #9ca3af;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.description a {
+  color: #9ca3af;
+  text-decoration: none;
+
 }
 
 body.light .description {
