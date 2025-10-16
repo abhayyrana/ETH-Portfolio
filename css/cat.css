@@ -1,0 +1,424 @@
+/* ===========================
+   ENHANCED CAT ELEMENTS - REALISTIC PIXEL CATS
+   Theme-aware: Light cats in dark mode, dark cats in light mode
+   =========================== */
+
+/* Base Cat Sprite - More detailed pixel art */
+.cat-sprite {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Enhanced Pixel Art Cats with Better Features */
+
+/* Light/White Cat - Shows in DARK mode */
+.white-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23f0f0f0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23f0f0f0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ffb3d9' d='M15 13h2v2h-2z'/%3E%3C!-- Whiskers --%3E%3Cpath fill='%23ddd' d='M8 12h2v1H8zm20 0h2v1h-2zM9 13h1v1H9zm21 0h1v1h-1z'/%3E%3C!-- Body --%3E%3Cpath fill='%23f0f0f0' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23ffb3d9' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23f0f0f0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C!-- Tail --%3E%3Cpath fill='%23f0f0f0' d='M22 20h2v4h-2zm2 18h2v4h-2z'/%3E%3C/svg%3E");
+}
+
+/* Orange/Ginger Cat - Shows in DARK mode */
+.orange-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23ff9955' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ff7733' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Stripes on ears --%3E%3Cpath fill='%23dd5522' d='M8 4h1v1H8zm3 0h1v1h-1zm12 0h1v1h-1zm3 0h1v1h-1z'/%3E%3C!-- Head --%3E%3Cpath fill='%23ff9955' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Stripes --%3E%3Cpath fill='%23dd5522' d='M10 8h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23ffee00' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body with stripes --%3E%3Cpath fill='%23ff9955' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23dd5522' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2zM12 21h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23ffccaa' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23ff9955' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* Gray Cat - Shows in DARK mode */
+.gray-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23b0b0b0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23b0b0b0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ddff' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ffaacc' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23b0b0b0' d='M10 18h12v6H10z'/%3E%3Cpath fill='%239a9a9a' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23e0e0e0' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23b0b0b0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* Black Cat - Shows in LIGHT mode */
+body.light .black-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23222' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23333' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23222' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes (glowing) --%3E%3Cpath fill='%23ffee00' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23000' d='M11.5 11h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23222' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23444' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23222' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* Dark Gray Cat - Shows in LIGHT mode */
+body.light .dark-gray-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23555' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23555' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff88aa' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23555' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23777' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23555' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* Brown/Tabby Cat - Shows in LIGHT mode */
+body.light .brown-cat {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23885533' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23664422' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23885533' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3Cpath fill='%23664422' d='M10 8h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23aa8800' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23885533' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23664422' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23aa7744' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23885533' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* Default cats in dark mode (light colored) */
+.black-cat,
+.dark-gray-cat,
+.brown-cat {
+    /* In dark mode, use light cats by default */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23f0f0f0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3Cpath fill='%23f0f0f0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3Cpath fill='%23ffb3d9' d='M15 13h2v2h-2z'/%3E%3Cpath fill='%23f0f0f0' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23ffb3d9' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23f0f0f0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+}
+
+/* ===========================
+   CAT ANIMATIONS & PLACEMENTS
+   =========================== */
+
+/* Cat roaming around name in hero section */
+.roaming-cat {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    animation: roamAroundName 15s ease-in-out infinite;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+    filter: drop-shadow(0 2px 8px rgba(168, 85, 247, 0.4));
+}
+
+.roaming-cat:hover {
+    opacity: 1;
+    animation-play-state: paused;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@keyframes roamAroundName {
+    0% {
+        transform: translate(-80px, -60px) scaleX(1);
+    }
+    25% {
+        transform: translate(80px, -50px) scaleX(-1);
+    }
+    50% {
+        transform: translate(90px, 50px) scaleX(-1);
+    }
+    75% {
+        transform: translate(-70px, 60px) scaleX(1);
+    }
+    100% {
+        transform: translate(-80px, -60px) scaleX(1);
+    }
+}
+
+/* Tumbling cat that appears on scroll */
+.tumbling-cat {
+    position: fixed;
+    top: -60px;
+    right: 10%;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    z-index: 998;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.tumbling-cat.tumble {
+    animation: tumbleDown 3s ease-in forwards;
+}
+
+@keyframes tumbleDown {
+    0% {
+        top: -60px;
+        opacity: 0;
+        transform: rotate(0deg) scale(1);
+    }
+    5% {
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(360deg) scale(1.1);
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        top: calc(100vh + 60px);
+        opacity: 0;
+        transform: rotate(720deg) scale(0.8);
+    }
+}
+
+/* Sitting cat in corner */
+.corner-cat {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    animation: catBreathe 3.5s ease-in-out infinite;
+    z-index: 5;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+}
+
+.corner-cat:hover {
+    opacity: 1;
+    transform: scale(1.3);
+    animation: catWag 0.6s ease-in-out 4;
+    cursor: pointer;
+}
+
+@keyframes catBreathe {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.08) translateY(-3px);
+    }
+}
+
+@keyframes catWag {
+    0%, 100% {
+        transform: rotate(0deg) scale(1.3);
+    }
+    25% {
+        transform: rotate(-8deg) scale(1.3);
+    }
+    75% {
+        transform: rotate(8deg) scale(1.3);
+    }
+}
+
+/* Cat in navbar on scroll */
+.nav-cat {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    animation: catTailWag 2.5s ease-in-out infinite;
+    opacity: 0;
+    transform: translateY(8px) scale(0.8);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+}
+
+body.scrolled .nav-cat {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+@keyframes catTailWag {
+    0%, 100% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+}
+
+/* Sleeping cat near footer */
+.sleeping-cat {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+    animation: catSleep 4.5s ease-in-out infinite;
+    vertical-align: middle;
+    filter: drop-shadow(0 2px 4px rgba(168, 85, 247, 0.3));
+}
+
+@keyframes catSleep {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-4px) scale(1.05);
+        opacity: 1;
+    }
+}
+
+/* Paw print trail */
+.paw-print {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    pointer-events: none;
+    animation: pawFade 2s ease-out forwards;
+    z-index: 1000;
+}
+
+.paw-sprite {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23a855f7' opacity='0.7' d='M12 14c-1.3 0-2.4 1.1-2.4 2.4s1.1 2.4 2.4 2.4 2.4-1.1 2.4-2.4-1.1-2.4-2.4-2.4zm-4.8-2.4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zm9.6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zM9 7.2c-1 0-1.8.8-1.8 1.8S8 10.8 9 10.8s1.8-.8 1.8-1.8S10 7.2 9 7.2zm6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8z'/%3E%3C/svg%3E");
+}
+
+body.light .paw-sprite {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%239333ea' opacity='0.6' d='M12 14c-1.3 0-2.4 1.1-2.4 2.4s1.1 2.4 2.4 2.4 2.4-1.1 2.4-2.4-1.1-2.4-2.4-2.4zm-4.8-2.4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zm9.6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zM9 7.2c-1 0-1.8.8-1.8 1.8S8 10.8 9 10.8s1.8-.8 1.8-1.8S10 7.2 9 7.2zm6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8z'/%3E%3C/svg%3E");
+}
+
+@keyframes pawFade {
+    0% {
+        opacity: 0.9;
+        transform: scale(0.6) rotate(-20deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4) rotate(10deg);
+    }
+}
+
+/* Surprise cat that peeks from bottom */
+.surprise-cat {
+    position: fixed;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.surprise-cat.peek {
+    bottom: 10px;
+    opacity: 1;
+    animation: surpriseBounce 0.5s ease-in-out 2;
+}
+
+@keyframes surpriseBounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+
+/* Cat cursor follower */
+.cat-cursor {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.15s ease;
+    transform: translate(-50%, -50%);
+}
+
+.cat-cursor.show {
+    opacity: 0.6;
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+   =========================== */
+
+@media (max-width: 768px) {
+    .roaming-cat {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .tumbling-cat {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .corner-cat {
+        width: 32px;
+        height: 32px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .nav-cat {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .sleeping-cat {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .surprise-cat {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .roaming-cat {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .corner-cat {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* ===========================
+   ACCESSIBILITY
+   =========================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .roaming-cat,
+    .tumbling-cat,
+    .corner-cat,
+    .sleeping-cat,
+    .nav-cat,
+    .surprise-cat,
+    .cat-cursor {
+        animation: none !important;
+        transition: opacity 0.3s ease !important;
+    }
+    
+    .tumbling-cat.tumble {
+        display: none;
+    }
+    
+    .roaming-cat:hover,
+    .corner-cat:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* ===========================
+   EASTER EGGS
+   =========================== */
+
+/* Spawned cats from clicking avatar */
+.spawned-cat {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    animation: spawnCat 2.5s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes spawnCat {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translateY(-120px);
+        opacity: 0;
+    }
+}
+
+/* Triple-click avatar easter egg hint */
+.avatar:active {
+    animation: avatarShake 0.3s ease-in-out;
+}
+
+@keyframes avatarShake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}

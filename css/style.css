@@ -244,6 +244,11 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.with {
+    font-size: 1.125rem;
+    margin-bottom: 0.2rem;
+}
+
 body.light .subtitle {
     background: linear-gradient(to right, #9333ea, #db2777);
     -webkit-background-clip: text;

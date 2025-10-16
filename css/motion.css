@@ -1,0 +1,622 @@
+/* ===========================
+   NAVBAR NAME ANIMATION (Left Side)
+   =========================== */
+
+/* Logo section container */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    transition: gap 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo (AR) */
+.logo {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Name that appears next to logo */
+.logo-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translateX(-20px);
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When scrolled, move logo left and show name */
+body.scrolled .logo {
+    transform: translateX(-10px);
+}
+
+body.scrolled .logo-section {
+    gap: 1rem;
+}
+
+body.scrolled .logo-name {
+    opacity: 1;
+    transform: translateX(0);
+    max-width: 200px;
+}
+
+/* ===========================
+   EXPANDABLE CARDS - ABOUT SECTION
+   =========================== */
+
+.card {
+    /* Smooth, slow transitions for ALL properties */
+    transition: flex 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                box-shadow 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                width 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                min-width 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    flex: 1 1 auto;
+    transform: scale(1);
+    opacity: 1;
+    /* Prevent height expansion on non-hovered cards */
+    align-self: start;
+    /* Ensure smooth width transitions */
+    width: 100%;
+    min-width: 0;
+}
+
+/* Card header (always visible) */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.card-header h3 {
+    margin-top: 0.5rem;
+    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.card-icon {
+    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* Card content (hidden by default) */
+.card-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                margin-top 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    margin-top: 0;
+}
+
+.card-content p {
+    color: #d1d5db;
+    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+body.light .card-content p {
+    color: #4b5563;
+}
+
+/* When card is expanded (hovered) - Only THIS card grows in height */
+.card.expand {
+    flex: 2 1 auto; /* Width expansion */
+    transform: scale(1.05);
+    z-index: 10;
+    opacity: 1;
+}
+
+.card.expand .card-content {
+    max-height: 500px; /* Height expansion only for expanded card */
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+/* When other cards shrink - They shrink in WIDTH only, NOT height */
+.card.shrink {
+    flex: 0.7 1 auto; /* Width contraction */
+    opacity: 0.6;
+    transform: scale(0.95); /* Slight scale down */
+}
+
+/* Shrunken cards keep their content collapsed */
+.card.shrink .card-content {
+    max-height: 0; /* Keep content hidden */
+    opacity: 0;
+    margin-top: 0;
+}
+
+/* ===========================
+   EXPANDABLE TIMELINE - EDUCATION SECTION
+   =========================== */
+
+.timeline-item {
+    /* Smooth, slow transitions for soft flowing motion */
+    transition: transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                box-shadow 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transform: scale(1) translateX(0);
+    opacity: 1;
+}
+
+/* Timeline header (always visible) */
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Timeline content (hidden by default) */
+.timeline-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                margin-top 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    margin-top: 0;
+}
+
+.timeline-content p {
+    color: #9ca3af;
+}
+
+body.light .timeline-content p {
+    color: #6b7280;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-content li {
+    color: #d1d5db;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+body.light .timeline-content li {
+    color: #4b5563;
+}
+
+.timeline-content li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+    font-weight: bold;
+}
+
+/* When timeline item is expanded */
+.timeline-item.expand {
+    transform: translateX(20px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+    z-index: 10;
+    opacity: 1;
+}
+
+.timeline-item.expand .timeline-content {
+    max-height: 800px;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+/* When other timeline items shrink */
+.timeline-item.shrink {
+    opacity: 0.5;
+    transform: scale(0.95) translateX(0);
+}
+
+.timeline-item.shrink .timeline-content {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+/* Expand indicator for timeline items */
+.timeline-item::after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #a855f7;
+    font-size: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95),
+                transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.timeline-item.expand::after {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+/* ===========================
+   SKILL BADGES WITH REAL ICONS
+   =========================== */
+
+.skill-badge {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: visible;
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+}
+
+/* Icon element (hidden by default) */
+.skill-badge::before {
+    content: '';
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-image: var(--icon-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 0;
+}
+
+/* When skill badge is hovered */
+.skill-badge:hover {
+    padding-left: 3rem;
+    transform: translateY(-4px) scale(1.1);
+}
+
+.skill-badge:hover::before {
+    width: 28px;
+    height: 28px;
+    opacity: 1;
+    margin-right: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+/* Set icon URL from data-icon attribute */
+.skill-badge[data-icon] {
+    --icon-url: url(attr(data-icon));
+}
+
+/* Fallback: Use data attribute to set background */
+.skill-badge[data-icon]::before {
+    background-image: var(--skill-icon);
+}
+
+/* ===========================
+   PROJECT CARDS ENHANCED HOVER
+   =========================== */
+
+.project-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-15px) rotate(1deg) scale(1.02);
+}
+
+.project-card:hover .project-tags {
+    transform: translateY(0);
+}
+
+.project-tags {
+    transform: translateY(5px);
+    transition: transform 0.3s ease;
+}
+
+/* ===========================
+   SOCIAL BUTTONS RIPPLE EFFECT
+   =========================== */
+
+.social-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(168, 85, 247, 0.4);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.social-btn:hover::after {
+    width: 120px;
+    height: 120px;
+}
+
+.social-btn i {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===========================
+   SCROLL DOWN INDICATOR
+   =========================== */
+
+.scroll-down {
+    animation: bounceDown 2s infinite;
+}
+
+@keyframes bounceDown {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(15px);
+        opacity: 0.7;
+    }
+}
+
+/* ===========================
+   FORM INPUT LIFT ANIMATION
+   =========================== */
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: translateY(-3px);
+}
+
+.form-group label {
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label {
+    color: #a855f7;
+}
+
+/* ===========================
+   NAVBAR LINK ANIMATION
+   =========================== */
+
+.nav-links a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-links a:hover {
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   GRADIENT ORB MOVEMENT
+   =========================== */
+
+.gradient-orb {
+    animation: orbFloat 8s ease-in-out infinite;
+}
+
+.orb-1 {
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    animation-delay: 4s;
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+/* ===========================
+   ABOUT GRID RESPONSIVE BEHAVIOR
+   =========================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    /* Smooth, slow width transitions with soft easing */
+    transition: grid-template-columns 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    align-items: start; /* Prevent vertical alignment issues */
+}
+
+/* When one card expands, adjust grid width smoothly */
+.about-grid:has(.card.expand) {
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-grid:has(.card:first-child.expand) {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* No hover state - return to equal columns smoothly */
+.about-grid:not(:has(.card.expand)) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+   =========================== */
+
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .logo-section {
+        gap: 0.5rem;
+    }
+    
+    body.scrolled .logo {
+        transform: translateX(-5px);
+    }
+    
+    body.scrolled .logo-name {
+        font-size: 1rem;
+        max-width: 150px;
+    }
+    
+    /* Cards stack vertically on mobile */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-grid:has(.card.expand) {
+        grid-template-columns: 1fr;
+    }
+    
+    .card.shrink {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .card.expand {
+        transform: scale(1.02);
+    }
+    
+    /* Timeline adjustments */
+    .timeline-item.expand {
+        transform: translateX(10px) scale(1.02);
+    }
+    
+    .timeline-item.shrink {
+        opacity: 0.8;
+        transform: scale(0.98);
+    }
+    
+    /* Skill badges on mobile */
+    .skill-badge:hover {
+        padding-left: 2.5rem;
+    }
+    
+    .skill-badge:hover::before {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hide name on very small screens */
+    body.scrolled .logo-name {
+        max-width: 120px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===========================
+   ACCESSIBILITY - REDUCED MOTION
+   =========================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .logo,
+    .logo-name,
+    .card,
+    .card-content,
+    .timeline-item,
+    .timeline-content,
+    .skill-badge,
+    .project-card,
+    .social-btn {
+        transition-duration: 0.01ms !important;
+    }
+    
+    .gradient-orb,
+    .scroll-down {
+        animation: none !important;
+    }
+    
+    .card.expand,
+    .timeline-item.expand,
+    .skill-badge:hover {
+        transform: none !important;
+    }
+}
+
+/* ===========================
+   LOADING ANIMATION FOR SKILL ICONS
+   =========================== */
+
+@keyframes iconLoad {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.skill-badge:hover::before {
+    animation: iconLoad 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ===========================
+   CARD HOVER GLOW EFFECT
+   =========================== */
+
+.card.expand,
+.timeline-item.expand {
+    box-shadow: 0 20px 60px rgba(168, 85, 247, 0.4),
+                0 0 40px rgba(168, 85, 247, 0.2);
+}
+
+/* ===========================
+   SMOOTH GRID TRANSITIONS
+   =========================== */
+
+.about-grid,
+.education-timeline {
+    /* Slower, softer transitions for flowing motion */
+    transition: all 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+/* ===========================
+   ADDITIONAL POLISH
+   =========================== */
+
+/* Prevent layout shift during animations */
+.card,
+.timeline-item {
+    will-change: transform, opacity;
+}
+
+/* Ensure smooth icon loading */
+.skill-badge::before {
+    will-change: width, height, opacity;
+}
+
+/* Smooth color transitions */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
