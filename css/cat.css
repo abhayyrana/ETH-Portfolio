@@ -16,94 +16,59 @@
     image-rendering: crisp-edges;
 }
 
-/* Enhanced Pixel Art Cats with Better Features */
+/* ===========================
+   ENHANCED PIXEL ART CATS
+   Better proportions and features
+   =========================== */
 
-/* Light/White Cat - Shows in DARK mode */
+/* White Cat - Shows in DARK mode */
 .white-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23f0f0f0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23f0f0f0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ffb3d9' d='M15 13h2v2h-2z'/%3E%3C!-- Whiskers --%3E%3Cpath fill='%23ddd' d='M8 12h2v1H8zm20 0h2v1h-2zM9 13h1v1H9zm21 0h1v1h-1z'/%3E%3C!-- Body --%3E%3Cpath fill='%23f0f0f0' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23ffb3d9' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23f0f0f0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C!-- Tail --%3E%3Cpath fill='%23f0f0f0' d='M22 20h2v4h-2zm2 18h2v4h-2z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3C/svg%3E");
 }
 
-/* Orange/Ginger Cat - Shows in DARK mode */
+/* Orange Tabby Cat - Shows in DARK mode */
 .orange-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23ff9955' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ff7733' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Stripes on ears --%3E%3Cpath fill='%23dd5522' d='M8 4h1v1H8zm3 0h1v1h-1zm12 0h1v1h-1zm3 0h1v1h-1z'/%3E%3C!-- Head --%3E%3Cpath fill='%23ff9955' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Stripes --%3E%3Cpath fill='%23dd5522' d='M10 8h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23ffee00' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body with stripes --%3E%3Cpath fill='%23ff9955' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23dd5522' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2zM12 21h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23ffccaa' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23ff9955' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ff7733'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23ff9955'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ff7733'/%3E%3C!-- Head with stripes --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23ff9955'/%3E%3Crect x='11' y='12' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='12' y='13' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='18' y='13' width='2' height='1' fill='%23dd5522'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23ffee00'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23ffee00'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body with stripes --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23ff9955'/%3E%3Crect x='12' y='22' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='18' y='22' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='13' y='24' width='2' height='1' fill='%23dd5522'/%3E%3Crect x='17' y='24' width='2' height='1' fill='%23dd5522'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23ff9955'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23ff9955'/%3E%3Crect x='22' y='23' width='1' height='1' fill='%23dd5522'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffccaa'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffccaa'/%3E%3C/svg%3E");
 }
 
 /* Gray Cat - Shows in DARK mode */
 .gray-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23b0b0b0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23b0b0b0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ddff' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ffaacc' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23b0b0b0' d='M10 18h12v6H10z'/%3E%3Cpath fill='%239a9a9a' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23e0e0e0' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23b0b0b0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23b0b0b0'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23b0b0b0'/%3E%3C!-- Shading --%3E%3Crect x='11' y='12' width='2' height='1' fill='%239a9a9a'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%239a9a9a'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ddff'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ddff'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffaacc'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23b0b0b0'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23b0b0b0'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23b0b0b0'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23e0e0e0'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23e0e0e0'/%3E%3C/svg%3E");
 }
 
 /* Black Cat - Shows in LIGHT mode */
 body.light .black-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23222' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23333' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23222' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes (glowing) --%3E%3Cpath fill='%23ffee00' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23000' d='M11.5 11h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23222' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23444' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23222' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23333'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23222'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23333'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23222'/%3E%3C!-- Left Eye (glowing) --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='13' y='16' width='1' height='1' fill='%23000'/%3E%3C!-- Right Eye (glowing) --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23ffee00'/%3E%3Crect x='18' y='16' width='1' height='1' fill='%23000'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23555'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23555'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23222'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23222'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23222'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23444'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23444'/%3E%3C/svg%3E");
 }
 
 /* Dark Gray Cat - Shows in LIGHT mode */
 body.light .dark-gray-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23555' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23555' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff88aa' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23555' d='M10 18h12v6H10z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23777' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23555' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23555'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3C!-- Head --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23555'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff88aa'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23555'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23555'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23555'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23777'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23777'/%3E%3C/svg%3E");
 }
 
-/* Brown/Tabby Cat - Shows in LIGHT mode */
+/* Brown Tabby Cat - Shows in LIGHT mode */
 body.light .brown-cat {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Ears --%3E%3Cpath fill='%23885533' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23664422' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3C!-- Head --%3E%3Cpath fill='%23885533' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3Cpath fill='%23664422' d='M10 8h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z'/%3E%3C!-- Eyes --%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%23aa8800' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3C!-- Nose --%3E%3Cpath fill='%23ff6b9d' d='M15 13h2v2h-2z'/%3E%3C!-- Body --%3E%3Cpath fill='%23885533' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23664422' d='M11 19h2v1h-2zm4 0h2v1h-2zm4 0h2v1h-2z'/%3E%3C!-- Paws --%3E%3Cpath fill='%23aa7744' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23885533' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C!-- Left Ear --%3E%3Crect x='7' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23664422'/%3E%3C!-- Right Ear --%3E%3Crect x='21' y='8' width='4' height='4' fill='%23885533'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23664422'/%3E%3C!-- Head with stripes --%3E%3Crect x='10' y='11' width='12' height='10' fill='%23885533'/%3E%3Crect x='11' y='12' width='2' height='1' fill='%23664422'/%3E%3Crect x='19' y='12' width='2' height='1' fill='%23664422'/%3E%3Crect x='12' y='13' width='2' height='1' fill='%23664422'/%3E%3Crect x='18' y='13' width='2' height='1' fill='%23664422'/%3E%3C!-- Left Eye --%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%23aa8800'/%3E%3C!-- Right Eye --%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%23aa8800'/%3E%3C!-- Nose --%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ff6b9d'/%3E%3C!-- Mouth --%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3C!-- Body with stripes --%3E%3Crect x='11' y='21' width='10' height='6' fill='%23885533'/%3E%3Crect x='12' y='22' width='2' height='1' fill='%23664422'/%3E%3Crect x='18' y='22' width='2' height='1' fill='%23664422'/%3E%3C!-- Tail --%3E%3Crect x='21' y='23' width='3' height='2' fill='%23885533'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23885533'/%3E%3Crect x='22' y='23' width='1' height='1' fill='%23664422'/%3E%3C!-- Paws --%3E%3Crect x='12' y='27' width='2' height='2' fill='%23aa7744'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23aa7744'/%3E%3C/svg%3E");
 }
 
-/* Default cats in dark mode (light colored) */
+/* Default cats in dark mode (use light colored cats) */
 .black-cat,
 .dark-gray-cat,
 .brown-cat {
-    /* In dark mode, use light cats by default */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23f0f0f0' d='M8 4h4v2H8zm12 0h4v2h-4z'/%3E%3Cpath fill='%23ffb3d9' d='M9 5h2v1H9zm13 0h2v1h-2z'/%3E%3Cpath fill='%23f0f0f0' d='M6 6h20v2H6zM6 8h2v8H6zm18 0h2v8h-2zM8 16h16v2H8z'/%3E%3Cpath fill='%23000' d='M11 10h2v3h-2zm8 0h2v3h-2z'/%3E%3Cpath fill='%2300ff88' d='M11.5 10.5h1v1h-1zm8 0h1v1h-1z'/%3E%3Cpath fill='%23ffb3d9' d='M15 13h2v2h-2z'/%3E%3Cpath fill='%23f0f0f0' d='M10 18h12v6H10z'/%3E%3Cpath fill='%23ffb3d9' d='M10 23h3v2h-3zm9 0h3v2h-3z'/%3E%3Cpath fill='%23f0f0f0' d='M10 25h3v2h-3zm9 0h3v2h-3z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='8' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='21' y='8' width='4' height='4' fill='%23f5f5f5'/%3E%3Crect x='22' y='9' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='10' y='11' width='12' height='10' fill='%23f5f5f5'/%3E%3Crect x='12' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='13' y='15' width='1' height='1' fill='%2300ff88'/%3E%3Crect x='17' y='14' width='3' height='4' fill='%23000'/%3E%3Crect x='18' y='15' width='1' height='1' fill='%2300ff88'/%3E%3Crect x='15' y='18' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='14' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='17' y='19' width='1' height='1' fill='%23000'/%3E%3Crect x='11' y='21' width='10' height='6' fill='%23f5f5f5'/%3E%3Crect x='21' y='23' width='3' height='2' fill='%23f5f5f5'/%3E%3Crect x='23' y='21' width='2' height='2' fill='%23f5f5f5'/%3E%3Crect x='12' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3Crect x='18' y='27' width='2' height='2' fill='%23ffb3d9'/%3E%3C/svg%3E");
 }
 
 /* ===========================
    CAT ANIMATIONS & PLACEMENTS
    =========================== */
 
-/* Cat roaming around name in hero section */
-.roaming-cat {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    animation: roamAroundName 15s ease-in-out infinite;
-    opacity: 0.85;
-    transition: opacity 0.3s ease;
-    z-index: 5;
-    filter: drop-shadow(0 2px 8px rgba(168, 85, 247, 0.4));
-}
-
-.roaming-cat:hover {
-    opacity: 1;
-    animation-play-state: paused;
-    cursor: pointer;
-    transform: scale(1.2);
-}
-
-@keyframes roamAroundName {
-    0% {
-        transform: translate(-80px, -60px) scaleX(1);
-    }
-    25% {
-        transform: translate(80px, -50px) scaleX(-1);
-    }
-    50% {
-        transform: translate(90px, 50px) scaleX(-1);
-    }
-    75% {
-        transform: translate(-70px, 60px) scaleX(1);
-    }
-    100% {
-        transform: translate(-80px, -60px) scaleX(1);
-    }
-}
-
 /* Tumbling cat that appears on scroll */
 .tumbling-cat {
     position: fixed;
     top: -60px;
     right: 10%;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     opacity: 0;
     z-index: 998;
     pointer-events: none;
@@ -136,14 +101,12 @@ body.light .brown-cat {
     }
 }
 
-/* Sitting cat in corner */
+/* Corner cats - sitting in section corners */
 .corner-cat {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-    width: 40px;
-    height: 40px;
-    opacity: 0.7;
+    width: 44px;
+    height: 44px;
+    opacity: 0.75;
     animation: catBreathe 3.5s ease-in-out infinite;
     z-index: 5;
     transition: all 0.3s ease;
@@ -152,7 +115,7 @@ body.light .brown-cat {
 
 .corner-cat:hover {
     opacity: 1;
-    transform: scale(1.3);
+    transform: scale(1.25);
     animation: catWag 0.6s ease-in-out 4;
     cursor: pointer;
 }
@@ -168,14 +131,35 @@ body.light .brown-cat {
 
 @keyframes catWag {
     0%, 100% {
-        transform: rotate(0deg) scale(1.3);
+        transform: rotate(0deg) scale(1.25);
     }
     25% {
-        transform: rotate(-8deg) scale(1.3);
+        transform: rotate(-8deg) scale(1.25);
     }
     75% {
-        transform: rotate(8deg) scale(1.3);
+        transform: rotate(8deg) scale(1.25);
     }
+}
+
+/* Position variations for corner cats */
+.corner-cat.top-left {
+    top: 30px;
+    left: 30px;
+}
+
+.corner-cat.top-right {
+    top: 30px;
+    right: 30px;
+}
+
+.corner-cat.bottom-left {
+    bottom: 30px;
+    left: 30px;
+}
+
+.corner-cat.bottom-right {
+    bottom: 30px;
+    right: 30px;
 }
 
 /* Cat in navbar on scroll */
@@ -205,7 +189,7 @@ body.scrolled .nav-cat {
     }
 }
 
-/* Sleeping cat near footer */
+/* Sleeping cat in footer */
 .sleeping-cat {
     position: relative;
     display: inline-block;
@@ -240,11 +224,11 @@ body.scrolled .nav-cat {
 }
 
 .paw-sprite {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23a855f7' opacity='0.7' d='M12 14c-1.3 0-2.4 1.1-2.4 2.4s1.1 2.4 2.4 2.4 2.4-1.1 2.4-2.4-1.1-2.4-2.4-2.4zm-4.8-2.4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zm9.6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zM9 7.2c-1 0-1.8.8-1.8 1.8S8 10.8 9 10.8s1.8-.8 1.8-1.8S10 7.2 9 7.2zm6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16' rx='2.4' ry='2.4' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='7.2' cy='13.6' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='16.8' cy='13.6' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='9' cy='9' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3Cellipse cx='15' cy='9' rx='1.8' ry='1.8' fill='%23a855f7' opacity='0.7'/%3E%3C/svg%3E");
 }
 
 body.light .paw-sprite {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%239333ea' opacity='0.6' d='M12 14c-1.3 0-2.4 1.1-2.4 2.4s1.1 2.4 2.4 2.4 2.4-1.1 2.4-2.4-1.1-2.4-2.4-2.4zm-4.8-2.4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zm9.6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8zM9 7.2c-1 0-1.8.8-1.8 1.8S8 10.8 9 10.8s1.8-.8 1.8-1.8S10 7.2 9 7.2zm6 0c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8 1.8-.8 1.8-1.8-.8-1.8-1.8-1.8z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16' rx='2.4' ry='2.4' fill='%239333ea' opacity='0.6'/%3E%3Cellipse cx='7.2' cy='13.6' rx='1.8' ry='1.8' fill='%239333ea' opacity='0.6'/%3E%3Cellipse cx='16.8' cy='13.6' rx='1.8' ry='1.8' fill='%239333ea' opacity='0.6'/%3E%3Cellipse cx='9' cy='9' rx='1.8' ry='1.8' fill='%239333ea' opacity='0.6'/%3E%3Cellipse cx='15' cy='9' rx='1.8' ry='1.8' fill='%239333ea' opacity='0.6'/%3E%3C/svg%3E");
 }
 
 @keyframes pawFade {
@@ -287,109 +271,18 @@ body.light .paw-sprite {
     }
 }
 
-/* Cat cursor follower */
-.cat-cursor {
-    position: fixed;
-    width: 28px;
-    height: 28px;
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.15s ease;
-    transform: translate(-50%, -50%);
-}
-
-.cat-cursor.show {
-    opacity: 0.6;
-}
-
-/* ===========================
-   RESPONSIVE ADJUSTMENTS
-   =========================== */
-
-@media (max-width: 768px) {
-    .roaming-cat {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .tumbling-cat {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .corner-cat {
-        width: 32px;
-        height: 32px;
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    .nav-cat {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .sleeping-cat {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .surprise-cat {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .roaming-cat {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .corner-cat {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-/* ===========================
-   ACCESSIBILITY
-   =========================== */
-
-@media (prefers-reduced-motion: reduce) {
-    .roaming-cat,
-    .tumbling-cat,
-    .corner-cat,
-    .sleeping-cat,
-    .nav-cat,
-    .surprise-cat,
-    .cat-cursor {
-        animation: none !important;
-        transition: opacity 0.3s ease !important;
-    }
-    
-    .tumbling-cat.tumble {
-        display: none;
-    }
-    
-    .roaming-cat:hover,
-    .corner-cat:hover {
-        transform: scale(1.1);
-    }
-}
-
 /* ===========================
    EASTER EGGS
    =========================== */
 
-/* Spawned cats from clicking avatar */
+/* Spawned cats from triple-clicking avatar */
 .spawned-cat {
     position: absolute;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     animation: spawnCat 2.5s ease-out forwards;
     pointer-events: none;
+    z-index: 1001;
 }
 
 @keyframes spawnCat {
@@ -406,19 +299,377 @@ body.light .paw-sprite {
     }
 }
 
-/* Triple-click avatar easter egg hint */
-.avatar:active {
-    animation: avatarShake 0.3s ease-in-out;
+/* Random spawn directions for variety */
+.spawned-cat:nth-child(1) {
+    animation: spawnCat1 2.5s ease-out forwards;
 }
 
-@keyframes avatarShake {
+.spawned-cat:nth-child(2) {
+    animation: spawnCat2 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(3) {
+    animation: spawnCat3 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(4) {
+    animation: spawnCat4 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(5) {
+    animation: spawnCat5 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(6) {
+    animation: spawnCat6 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(7) {
+    animation: spawnCat7 2.5s ease-out forwards;
+}
+
+.spawned-cat:nth-child(8) {
+    animation: spawnCat8 2.5s ease-out forwards;
+}
+
+@keyframes spawnCat1 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(-100px, -150px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat2 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(-70px, -180px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat3 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(0, -200px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat4 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(70px, -180px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat5 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(100px, -150px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat6 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(-120px, -100px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat7 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(120px, -100px);
+        opacity: 0;
+    }
+}
+
+@keyframes spawnCat8 {
+    0% {
+        transform: scale(0) rotate(0deg) translate(0, 0);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg) translate(0, -220px);
+        opacity: 0;
+    }
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+   =========================== */
+
+@media (max-width: 768px) {
+    .tumbling-cat {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .corner-cat {
+        width: 36px;
+        height: 36px;
+        opacity: 0.6;
+    }
+    
+    .corner-cat.top-left,
+    .corner-cat.top-right {
+        top: 15px;
+    }
+    
+    .corner-cat.top-left,
+    .corner-cat.bottom-left {
+        left: 15px;
+    }
+    
+    .corner-cat.top-right,
+    .corner-cat.bottom-right {
+        right: 15px;
+    }
+    
+    .corner-cat.bottom-left,
+    .corner-cat.bottom-right {
+        bottom: 15px;
+    }
+    
+    .nav-cat {
+        width: 20px;
+        height: 20px;
+        margin-left: 6px;
+    }
+    
+    .sleeping-cat {
+        width: 28px;
+        height: 28px;
+        margin: 0 6px;
+    }
+    
+    .surprise-cat {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .spawned-cat {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .paw-print {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .corner-cat {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .tumbling-cat {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .nav-cat {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ===========================
+   ACCESSIBILITY - REDUCED MOTION
+   =========================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .tumbling-cat,
+    .corner-cat,
+    .nav-cat,
+    .sleeping-cat,
+    .surprise-cat,
+    .spawned-cat,
+    .paw-print {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .tumbling-cat.tumble {
+        display: none;
+    }
+    
+    .surprise-cat.peek {
+        display: none;
+    }
+    
+    body.scrolled .nav-cat {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    
+    .corner-cat:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* ===========================
+   LIGHT MODE SPECIFIC ADJUSTMENTS
+   =========================== */
+
+body.light .corner-cat {
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+body.light .sleeping-cat {
+    filter: drop-shadow(0 2px 4px rgba(147, 51, 234, 0.3));
+}
+
+/* ===========================
+   HOVER EFFECTS & INTERACTIONS
+   =========================== */
+
+/* Add subtle glow to cats on hover */
+.corner-cat:hover,
+.surprise-cat.peek:hover,
+.sleeping-cat:hover {
+    filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.6));
+}
+
+body.light .corner-cat:hover,
+body.light .surprise-cat.peek:hover,
+body.light .sleeping-cat:hover {
+    filter: drop-shadow(0 0 12px rgba(147, 51, 234, 0.5));
+}
+
+/* Tumbling cat rotation variety */
+.tumbling-cat.tumble:nth-child(odd) {
+    animation-direction: reverse;
+}
+
+/* Cat meow effect (visual feedback on click) */
+.corner-cat:active,
+.sleeping-cat:active {
+    animation: catMeow 0.3s ease-in-out;
+}
+
+@keyframes catMeow {
     0%, 100% {
-        transform: rotate(0deg);
+        transform: scale(1.25);
     }
-    25% {
-        transform: rotate(-5deg);
+    50% {
+        transform: scale(1.4);
     }
-    75% {
-        transform: rotate(5deg);
+}
+
+/* ===========================
+   PERFORMANCE OPTIMIZATIONS
+   =========================== */
+
+/* Use GPU acceleration for smoother animations */
+.tumbling-cat,
+.corner-cat,
+.nav-cat,
+.sleeping-cat,
+.surprise-cat,
+.spawned-cat,
+.paw-print {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* ===========================
+   Z-INDEX MANAGEMENT
+   =========================== */
+
+/* Ensure proper layering */
+.paw-print {
+    z-index: 1000;
+}
+
+.surprise-cat {
+    z-index: 1000;
+}
+
+.tumbling-cat {
+    z-index: 998;
+}
+
+.spawned-cat {
+    z-index: 1001;
+}
+
+.corner-cat {
+    z-index: 5;
+}
+
+.nav-cat {
+    z-index: auto;
+}
+
+.sleeping-cat {
+    z-index: auto;
+}
+
+/* ===========================
+   PRINT STYLES
+   =========================== */
+
+@media print {
+    .tumbling-cat,
+    .corner-cat,
+    .nav-cat,
+    .sleeping-cat,
+    .surprise-cat,
+    .spawned-cat,
+    .paw-print {
+        display: none !important;
     }
 }

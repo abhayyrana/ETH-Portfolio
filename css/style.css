@@ -118,7 +118,6 @@ body.light .nav-links a {
     transition: all 0.3s;
 }
 
-
 body.light .theme-toggle {
     background: #e5e7eb;
 }
@@ -145,8 +144,8 @@ body.light .theme-toggle:hover {
 
 .gradient-orb {
     position: absolute;
-    width: 384px;
-    height: 384px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     filter: blur(100px);
     animation: pulse 4s ease-in-out infinite;
@@ -351,13 +350,17 @@ body.light .section-desc {
     color: #4b5563;
 }
 
-/* About Cards */
+/* ===========================
+   FIXED ABOUT CARDS SECTION
+   =========================== */
+
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     max-width: 64rem;
     margin: 0 auto;
+    align-items: start;
 }
 
 .card {
@@ -366,7 +369,14 @@ body.light .section-desc {
     border-radius: 1rem;
     padding: 2rem;
     backdrop-filter: blur(10px);
-    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 body.light .card {
@@ -374,10 +384,14 @@ body.light .card {
     border: 1px solid #e5e7eb;
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
-    border-color: rgba(168, 85, 247, 0.5);
+/* Card header - always visible */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .card-icon {
@@ -389,17 +403,61 @@ body.light .card-icon {
     color: #9333ea;
 }
 
-.card h3 {
+.card-header h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
-.card p {
+/* Card content - initially hidden */
+.card-content {
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.card-content p {
     color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
-body.light .card p {
+.card-content p:first-child {
+    margin-top: 0;
+}
+
+body.light .card-content p {
     color: #4b5563;
+}
+
+/* Normal state - empty boxes with only headers visible */
+.card.shrink {
+    min-height: 140px;
+    opacity: 0.5;
+}
+
+.card.shrink .card-content {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+/* Expanded state - show full content */
+.card.expand {
+    min-height: auto;
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 20px 60px rgba(168, 85, 247, 0.4),
+                0 0 40px rgba(168, 85, 247, 0.2);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.card.expand .card-content {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: 1.5rem;
 }
 
 /* Education Timeline */
@@ -755,5 +813,10 @@ body.light footer {
 
     .about-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Mobile: disable shrinking, only show expansion */
+    .card.shrink {
+        opacity: 1;
     }
 }
